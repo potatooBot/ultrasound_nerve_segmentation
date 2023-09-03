@@ -1,4 +1,4 @@
-# Ultrasound-Nerve-Segmentation by Keshav
+# Ultrasound-Nerve-Segmentation 
 Accurately identifying nerve structures in ultrasound images is a critical step in effectively inserting a patient’s pain management catheter. 
 Hence, this is a model that can identify nerve structures in a dataset of ultrasound images of the neck. Doing so would improve catheter placement and contribute to a more pain free future.
 
