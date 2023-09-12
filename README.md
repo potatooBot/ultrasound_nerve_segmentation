@@ -4,16 +4,8 @@ Hence, this is a model that can identify nerve structures in a dataset of ultras
 
 
 ## Dataset
-The data has been provided by kaggle as part of one of their competitions which requires a model for nerve segmentation.
-The task was to segment a collection of nerves called the Brachial Plexus (BP) in ultrasound images. A large training set of images where the nerve has been manually annotated by humans was provided.
+The data has been taken by real patients.
 
-Ultrasound Nerve Segmentation dataset - https://www.kaggle.com/c/5144/download-all
-
-The dataset can also be downloaded using [Kaggle API](https://github.com/Kaggle/kaggle-api)
-```
-kaggle competitions download -c ultrasound-nerve-segmentation
-```
-![Data format](https://user-images.githubusercontent.com/41809968/59549678-d133e080-8f7e-11e9-9c0e-3c5c73222c25.png)
 
 ### File Description
 * /train/ contains the training set images, named according to subject_imageNum.tif. Every image with the same subject number comes from the same person. This folder also includes binary mask images showing the BP segmentations.
@@ -25,7 +17,6 @@ kaggle competitions download -c ultrasound-nerve-segmentation
 * Contraction path extracts context of the image and doing so, the image is down sampled.
 * Then, the Expansion path upsamples the image and outputs a probability mask of same size as that of input image.
 
-![Network Architecture](https://cdn-images-1.medium.com/max/1100/1*OkUrpDD6I0FpugA_bbYBJQ.png)
 
 ## Training
 * The images are prprocessed and resized to (128 , 128).
